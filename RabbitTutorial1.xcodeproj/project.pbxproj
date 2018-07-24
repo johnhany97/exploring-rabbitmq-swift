@@ -12,9 +12,12 @@
 		7AE17BAD21074D57008BB536 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AE17BAB21074D57008BB536 /* Main.storyboard */; };
 		7AE17BAF21074D59008BB536 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AE17BAE21074D59008BB536 /* Assets.xcassets */; };
 		7AE17BB221074D59008BB536 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AE17BB021074D59008BB536 /* LaunchScreen.storyboard */; };
+		7AE17BBA21074DF1008BB536 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 7AE17BB921074DF1008BB536 /* Podfile */; };
+		F7327CBC1426AB50731E6BFD /* Pods_RabbitTutorial1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C05240AD0FE4F8E4229E079D /* Pods_RabbitTutorial1.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0926E18D6ABDBD5FF8568686 /* Pods-RabbitTutorial1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RabbitTutorial1.release.xcconfig"; path = "Pods/Target Support Files/Pods-RabbitTutorial1/Pods-RabbitTutorial1.release.xcconfig"; sourceTree = "<group>"; };
 		7AE17BA421074D57008BB536 /* RabbitTutorial1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RabbitTutorial1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AE17BA721074D57008BB536 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AE17BA921074D57008BB536 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		7AE17BAE21074D59008BB536 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AE17BB121074D59008BB536 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7AE17BB321074D59008BB536 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AE17BB921074DF1008BB536 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		C05240AD0FE4F8E4229E079D /* Pods_RabbitTutorial1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RabbitTutorial1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC80FBCE06CCB2CC4EF70B56 /* Pods-RabbitTutorial1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RabbitTutorial1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RabbitTutorial1/Pods-RabbitTutorial1.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7327CBC1426AB50731E6BFD /* Pods_RabbitTutorial1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +45,11 @@
 		7AE17B9B21074D57008BB536 = {
 			isa = PBXGroup;
 			children = (
+				7AE17BB921074DF1008BB536 /* Podfile */,
 				7AE17BA621074D57008BB536 /* RabbitTutorial1 */,
 				7AE17BA521074D57008BB536 /* Products */,
+				BED149AD5CA09AB6AF5B25F6 /* Pods */,
+				BC152AAD01DEB68F7022752D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +74,23 @@
 			path = RabbitTutorial1;
 			sourceTree = "<group>";
 		};
+		BC152AAD01DEB68F7022752D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C05240AD0FE4F8E4229E079D /* Pods_RabbitTutorial1.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BED149AD5CA09AB6AF5B25F6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC80FBCE06CCB2CC4EF70B56 /* Pods-RabbitTutorial1.debug.xcconfig */,
+				0926E18D6ABDBD5FF8568686 /* Pods-RabbitTutorial1.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7AE17BB621074D59008BB536 /* Build configuration list for PBXNativeTarget "RabbitTutorial1" */;
 			buildPhases = (
+				DEA2CB9B14FF8CBC1FE9CB01 /* [CP] Check Pods Manifest.lock */,
 				7AE17BA021074D57008BB536 /* Sources */,
 				7AE17BA121074D57008BB536 /* Frameworks */,
 				7AE17BA221074D57008BB536 /* Resources */,
+				1DF9AFFAFDA40EE8ADE2A27D /* [CP] Embed Pods Frameworks */,
+				CC89A8780F818EDED3C8A3A8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,11 +154,70 @@
 			files = (
 				7AE17BB221074D59008BB536 /* LaunchScreen.storyboard in Resources */,
 				7AE17BAF21074D59008BB536 /* Assets.xcassets in Resources */,
+				7AE17BBA21074DF1008BB536 /* Podfile in Resources */,
 				7AE17BAD21074D57008BB536 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1DF9AFFAFDA40EE8ADE2A27D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RabbitTutorial1/Pods-RabbitTutorial1-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/JKVValue/JKVValue.framework",
+				"${BUILT_PRODUCTS_DIR}/RMQClient/RMQClient.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JKVValue.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RMQClient.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RabbitTutorial1/Pods-RabbitTutorial1-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC89A8780F818EDED3C8A3A8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RabbitTutorial1/Pods-RabbitTutorial1-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEA2CB9B14FF8CBC1FE9CB01 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RabbitTutorial1-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7AE17BA021074D57008BB536 /* Sources */ = {
@@ -278,15 +367,13 @@
 		};
 		7AE17BB721074D59008BB536 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC80FBCE06CCB2CC4EF70B56 /* Pods-RabbitTutorial1.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6CD3Y42D97;
 				INFOPLIST_FILE = RabbitTutorial1/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.johnayad.RabbitTutorial1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -296,15 +383,13 @@
 		};
 		7AE17BB821074D59008BB536 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0926E18D6ABDBD5FF8568686 /* Pods-RabbitTutorial1.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6CD3Y42D97;
 				INFOPLIST_FILE = RabbitTutorial1/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.johnayad.RabbitTutorial1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
