@@ -13,9 +13,13 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        self.send()
-        self.receive()
+        self.workerNamed("Jack")
+        self.workerNamed("Jill")
+        sleep(1)
+        self.newTask("Hello World...")
+        self.newTask("Just one this time.")
+        self.newTask("None")
+        self.newTask("Two..dots")
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,28 +27,34 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func send() {
-        print("Attempting to connect to local RabbitMQ broker")
-        let conn = RMQConnection(delegate: RMQConnectionDelegateLogger())
-        conn.start()
-        let ch = conn.createChannel()
-        let q = ch.queue("hello")
-        ch.defaultExchange().publish("Hello World!".data(using: .utf8), routingKey: q.name)
-        print("Sent 'Hello World!'")
-        conn.close()
+    func newTask(_ msg: String) {
+        let connection = RMQConnection(delegate: RMQConnectionDelegateLogger())
+        connection.start()
+        let channel = connection.createChannel()
+        let queue = channel.queue("task_queue", options: .durable)
+        let msgData = msg.data(using: .utf8)
+        channel.defaultExchange().publish(msgData, routingKey: queue.name, persistent: true)
+        print("Sent \(msg)")
+        connection.close()
     }
     
-    func receive() {
-        print("Attempting to connect to local RabbitMQ broker")
-        let conn = RMQConnection(delegate: RMQConnectionDelegateLogger())
-        conn.start()
-        let ch = conn.createChannel()
-        let q = ch.queue("hello")
-        print("Waiting for messages.")
-        q.subscribe({(_ message: RMQMessage) -> Void in
-            print("Received \(String(data: message.body, encoding: String.Encoding.utf8)!)")
+    func workerNamed(_ name: String) {
+        let connection = RMQConnection(delegate: RMQConnectionDelegateLogger())
+        connection.start()
+        let channel = connection.createChannel()
+        let queue = channel.queue("task_queue", options: .durable)
+        channel.basicQos(1, global:false)
+        print("\(name): Waiting for messages")
+        let manualAck = RMQBasicConsumeOptions()
+        queue.subscribe(manualAck, handler: {(_ message: RMQMessage) -> Void in
+            let messageText = String(data: message.body, encoding: .utf8)
+            print("\(name): Received \(messageText!)")
+            // imitate some work
+            let sleepTime = UInt32(messageText!.components(separatedBy:".").count) - 1
+            print("\(name): Sleeping for \(sleepTime) seconds")
+            sleep(sleepTime)
+            channel.ack(message.deliveryTag)
         })
     }
-
 }
 
