@@ -7,27 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08B8E6FD7398BC164814C3E6 /* Pods_RabbitMQTutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A201D742E47B44C2B0A0ED47 /* Pods_RabbitMQTutorial.framework */; };
 		7AE17BA821074D57008BB536 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE17BA721074D57008BB536 /* AppDelegate.swift */; };
 		7AE17BAA21074D57008BB536 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE17BA921074D57008BB536 /* ViewController.swift */; };
 		7AE17BAD21074D57008BB536 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AE17BAB21074D57008BB536 /* Main.storyboard */; };
 		7AE17BAF21074D59008BB536 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AE17BAE21074D59008BB536 /* Assets.xcassets */; };
 		7AE17BB221074D59008BB536 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AE17BB021074D59008BB536 /* LaunchScreen.storyboard */; };
 		7AE17BBA21074DF1008BB536 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 7AE17BB921074DF1008BB536 /* Podfile */; };
-		F7327CBC1426AB50731E6BFD /* Pods_RabbitTutorial1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C05240AD0FE4F8E4229E079D /* Pods_RabbitTutorial1.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0926E18D6ABDBD5FF8568686 /* Pods-RabbitTutorial1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RabbitTutorial1.release.xcconfig"; path = "Pods/Target Support Files/Pods-RabbitTutorial1/Pods-RabbitTutorial1.release.xcconfig"; sourceTree = "<group>"; };
-		7AE17BA421074D57008BB536 /* RabbitTutorial1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RabbitTutorial1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CD6A00982B337CCC3CFF3D6 /* Pods-RabbitMQTutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RabbitMQTutorial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RabbitMQTutorial/Pods-RabbitMQTutorial.debug.xcconfig"; sourceTree = "<group>"; };
+		7AE17BA421074D57008BB536 /* RabbitMQTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RabbitMQTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AE17BA721074D57008BB536 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AE17BA921074D57008BB536 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7AE17BAC21074D57008BB536 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7AE17BAE21074D59008BB536 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AE17BB121074D59008BB536 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7AE17BB321074D59008BB536 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7AE17BB921074DF1008BB536 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
-		C05240AD0FE4F8E4229E079D /* Pods_RabbitTutorial1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RabbitTutorial1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC80FBCE06CCB2CC4EF70B56 /* Pods-RabbitTutorial1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RabbitTutorial1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RabbitTutorial1/Pods-RabbitTutorial1.debug.xcconfig"; sourceTree = "<group>"; };
+		7AE17BB921074DF1008BB536 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A201D742E47B44C2B0A0ED47 /* Pods_RabbitMQTutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RabbitMQTutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5A4151FA4E16219045C05CA /* Pods-RabbitMQTutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RabbitMQTutorial.release.xcconfig"; path = "Pods/Target Support Files/Pods-RabbitMQTutorial/Pods-RabbitMQTutorial.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7327CBC1426AB50731E6BFD /* Pods_RabbitTutorial1.framework in Frameworks */,
+				08B8E6FD7398BC164814C3E6 /* Pods_RabbitMQTutorial.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,7 +46,7 @@
 			isa = PBXGroup;
 			children = (
 				7AE17BB921074DF1008BB536 /* Podfile */,
-				7AE17BA621074D57008BB536 /* RabbitTutorial1 */,
+				7AE17BA621074D57008BB536 /* RabbitMQTutorial */,
 				7AE17BA521074D57008BB536 /* Products */,
 				BED149AD5CA09AB6AF5B25F6 /* Pods */,
 				BC152AAD01DEB68F7022752D /* Frameworks */,
@@ -56,12 +56,12 @@
 		7AE17BA521074D57008BB536 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7AE17BA421074D57008BB536 /* RabbitTutorial1.app */,
+				7AE17BA421074D57008BB536 /* RabbitMQTutorial.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7AE17BA621074D57008BB536 /* RabbitTutorial1 */ = {
+		7AE17BA621074D57008BB536 /* RabbitMQTutorial */ = {
 			isa = PBXGroup;
 			children = (
 				7AE17BA721074D57008BB536 /* AppDelegate.swift */,
@@ -71,13 +71,13 @@
 				7AE17BB021074D59008BB536 /* LaunchScreen.storyboard */,
 				7AE17BB321074D59008BB536 /* Info.plist */,
 			);
-			path = RabbitTutorial1;
+			path = RabbitMQTutorial;
 			sourceTree = "<group>";
 		};
 		BC152AAD01DEB68F7022752D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C05240AD0FE4F8E4229E079D /* Pods_RabbitTutorial1.framework */,
+				A201D742E47B44C2B0A0ED47 /* Pods_RabbitMQTutorial.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -85,8 +85,8 @@
 		BED149AD5CA09AB6AF5B25F6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FC80FBCE06CCB2CC4EF70B56 /* Pods-RabbitTutorial1.debug.xcconfig */,
-				0926E18D6ABDBD5FF8568686 /* Pods-RabbitTutorial1.release.xcconfig */,
+				5CD6A00982B337CCC3CFF3D6 /* Pods-RabbitMQTutorial.debug.xcconfig */,
+				E5A4151FA4E16219045C05CA /* Pods-RabbitMQTutorial.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -94,9 +94,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7AE17BA321074D57008BB536 /* RabbitTutorial1 */ = {
+		7AE17BA321074D57008BB536 /* RabbitMQTutorial */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7AE17BB621074D59008BB536 /* Build configuration list for PBXNativeTarget "RabbitTutorial1" */;
+			buildConfigurationList = 7AE17BB621074D59008BB536 /* Build configuration list for PBXNativeTarget "RabbitMQTutorial" */;
 			buildPhases = (
 				DEA2CB9B14FF8CBC1FE9CB01 /* [CP] Check Pods Manifest.lock */,
 				7AE17BA021074D57008BB536 /* Sources */,
@@ -109,9 +109,9 @@
 			);
 			dependencies = (
 			);
-			name = RabbitTutorial1;
+			name = RabbitMQTutorial;
 			productName = RabbitTutorial1;
-			productReference = 7AE17BA421074D57008BB536 /* RabbitTutorial1.app */;
+			productReference = 7AE17BA421074D57008BB536 /* RabbitMQTutorial.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -129,7 +129,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7AE17B9F21074D57008BB536 /* Build configuration list for PBXProject "RabbitTutorial1" */;
+			buildConfigurationList = 7AE17B9F21074D57008BB536 /* Build configuration list for PBXProject "RabbitMQTutorial" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -142,7 +142,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7AE17BA321074D57008BB536 /* RabbitTutorial1 */,
+				7AE17BA321074D57008BB536 /* RabbitMQTutorial */,
 			);
 		};
 /* End PBXProject section */
@@ -168,7 +168,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-RabbitTutorial1/Pods-RabbitTutorial1-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-RabbitMQTutorial/Pods-RabbitMQTutorial-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
 				"${BUILT_PRODUCTS_DIR}/JKVValue/JKVValue.framework",
 				"${BUILT_PRODUCTS_DIR}/RMQClient/RMQClient.framework",
@@ -181,7 +181,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RabbitTutorial1/Pods-RabbitTutorial1-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RabbitMQTutorial/Pods-RabbitMQTutorial-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CC89A8780F818EDED3C8A3A8 /* [CP] Copy Pods Resources */ = {
@@ -196,7 +196,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RabbitTutorial1/Pods-RabbitTutorial1-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RabbitMQTutorial/Pods-RabbitMQTutorial-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DEA2CB9B14FF8CBC1FE9CB01 /* [CP] Check Pods Manifest.lock */ = {
@@ -210,7 +210,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RabbitTutorial1-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-RabbitMQTutorial-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -367,14 +367,17 @@
 		};
 		7AE17BB721074D59008BB536 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FC80FBCE06CCB2CC4EF70B56 /* Pods-RabbitTutorial1.debug.xcconfig */;
+			baseConfigurationReference = 5CD6A00982B337CCC3CFF3D6 /* Pods-RabbitMQTutorial.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6CD3Y42D97;
-				INFOPLIST_FILE = RabbitTutorial1/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.johnayad.RabbitTutorial1;
+				INFOPLIST_FILE = "$(SRCROOT)/RabbitMQTutorial/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnayad.RabbitMQTutorial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -383,14 +386,17 @@
 		};
 		7AE17BB821074D59008BB536 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0926E18D6ABDBD5FF8568686 /* Pods-RabbitTutorial1.release.xcconfig */;
+			baseConfigurationReference = E5A4151FA4E16219045C05CA /* Pods-RabbitMQTutorial.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6CD3Y42D97;
-				INFOPLIST_FILE = RabbitTutorial1/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.johnayad.RabbitTutorial1;
+				INFOPLIST_FILE = "$(SRCROOT)/RabbitMQTutorial/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnayad.RabbitMQTutorial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -400,7 +406,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7AE17B9F21074D57008BB536 /* Build configuration list for PBXProject "RabbitTutorial1" */ = {
+		7AE17B9F21074D57008BB536 /* Build configuration list for PBXProject "RabbitMQTutorial" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7AE17BB421074D59008BB536 /* Debug */,
@@ -409,7 +415,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7AE17BB621074D59008BB536 /* Build configuration list for PBXNativeTarget "RabbitTutorial1" */ = {
+		7AE17BB621074D59008BB536 /* Build configuration list for PBXNativeTarget "RabbitMQTutorial" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7AE17BB721074D59008BB536 /* Debug */,

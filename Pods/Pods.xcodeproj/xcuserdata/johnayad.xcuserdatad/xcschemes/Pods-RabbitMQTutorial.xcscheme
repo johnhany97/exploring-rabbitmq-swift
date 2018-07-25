@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D2DEFC7DCB5CF44F49018C13CD649F72"
-               BuildableName = "Pods_RabbitTutorial1.framework"
-               BlueprintName = "Pods-RabbitTutorial1"
+               BlueprintIdentifier = "5054B2FFC996EBE0250D5FB094560EDC"
+               BuildableName = "Pods_RabbitMQTutorial.framework"
+               BlueprintName = "Pods-RabbitMQTutorial"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D2DEFC7DCB5CF44F49018C13CD649F72"
-            BuildableName = "Pods_RabbitTutorial1.framework"
-            BlueprintName = "Pods-RabbitTutorial1"
+            BlueprintIdentifier = "5054B2FFC996EBE0250D5FB094560EDC"
+            BuildableName = "Pods_RabbitMQTutorial.framework"
+            BlueprintName = "Pods-RabbitMQTutorial"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

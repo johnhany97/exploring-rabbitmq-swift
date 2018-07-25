@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_RabbitTutorial1VersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_RabbitTutorial1VersionString[];
+FOUNDATION_EXPORT double Pods_RabbitMQTutorialVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_RabbitMQTutorialVersionString[];
 

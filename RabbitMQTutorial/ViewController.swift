@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  RabbitTutorial1
+//  RabbitMQTutorial
 //
 //  Created by John Ayad on 24/07/2018.
 //  Copyright © 2018 John Ayad. All rights reserved.

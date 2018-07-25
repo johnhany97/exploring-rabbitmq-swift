@@ -1,0 +1,6 @@
+framework module Pods_RabbitMQTutorial {
+  umbrella header "Pods-RabbitMQTutorial-umbrella.h"
+
+  export *
+  module * { export * }
+}
