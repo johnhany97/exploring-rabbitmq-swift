@@ -31,8 +31,12 @@ class ViewController: UIViewController {
         let connection = RMQConnection(delegate: RMQConnectionDelegateLogger())
         connection.start()
         let channel = connection.createChannel()
+        // This is to make sure RabbitMQ will never lose the queue
         let queue = channel.queue("task_queue", options: .durable)
         let msgData = msg.data(using: .utf8)
+        // We mark messages as persistent as well so that even if RabbitMQ restarts, the messages will still be there
+        // It's not a full guarantee that a message won't be lost. Unfortunately.
+        // (Read: https://www.rabbitmq.com/tutorials/tutorial-two-swift.html)
         channel.defaultExchange().publish(msgData, routingKey: queue.name, persistent: true)
         print("Sent \(msg)")
         connection.close()
@@ -42,7 +46,11 @@ class ViewController: UIViewController {
         let connection = RMQConnection(delegate: RMQConnectionDelegateLogger())
         connection.start()
         let channel = connection.createChannel()
+        // This is to make sure RabbitMQ will never lose the queue
         let queue = channel.queue("task_queue", options: .durable)
+        // This is to avoid default behaviour and to properly distribute tasks amongst workers
+        // This will result in tasks being given to the next empty worker. Also, this means that you won't receive
+        // tasks as a worker till you finish the task on hand and acknowledge it
         channel.basicQos(1, global:false)
         print("\(name): Waiting for messages")
         let manualAck = RMQBasicConsumeOptions()
